@@ -10,12 +10,14 @@ int main()
     ifstream fin;
     ofstream fout;
     ofstream foutB;
+    ofstream foutC;
     string words;
     string newString;    
     string space = " ";
     fin.open("gba.txt");
     fout.open("results.txt");
     foutB.open("capitalize.txt");
+    foutC.open("uppercase.txt");
     int chars = 0;
     int wordCount = 0;
     int length = 0;
@@ -37,7 +39,7 @@ int main()
     {
          
         length = words.length();
-        words = upperAll(words);
+        //words = upperAll(words);
         switch (length)
         {
             case 2:
@@ -78,7 +80,7 @@ int main()
         
         
         //fin >> words;
-        foutB << words << space;
+        foutC << words << space;
     
     }// while
     
@@ -98,7 +100,7 @@ int main()
     fin.close();
     fout.close();
     foutB.close();
-    
+    foutC.close();
     
     return 0;
 }
