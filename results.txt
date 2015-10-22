@@ -1,0 +1,1 @@
+average characters per word: 4
