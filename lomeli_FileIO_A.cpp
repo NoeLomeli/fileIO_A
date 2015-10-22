@@ -9,11 +9,13 @@ int main()
 {
     ifstream fin;
     ofstream fout;
+    ofstream foutB;
     string words;
     string newString;    
     string space = " ";
     fin.open("gba.txt");
     fout.open("results.txt");
+    foutB.open("capitalize.txt");
     int chars = 0;
     int wordCount = 0;
     int length = 0;
@@ -71,12 +73,12 @@ int main()
         }//switch
         
         
-        //words[0] =  toupper(words[0]);
+        words[0] =  toupper(words[0]);
         newString += words + space;
         
         
         //fin >> words;
-        fout << words << space;
+        foutB << words << space;
     
     }// while
     
@@ -95,6 +97,7 @@ int main()
     fout << "Total number of words: " << wordCount << endl;
     fin.close();
     fout.close();
+    foutB.close();
     
     
     return 0;
