@@ -1,12 +1,13 @@
 average characters per word: 4
-56words of length 2
-56words of length 3
-56words of length 4
-37words of length 5
-18words of length 6
-23words of length 7
-7words of length 8
-9words of length 9
-6words of length 10
-2words of length 11 or longer
+7 words of length 1
+56 words of length 2
+56 words of length 3
+56 words of length 4
+37 words of length 5
+18 words of length 6
+23 words of length 7
+7 words of length 8
+9 words of length 9
+6 words of length 10
+3 words of length 11 or longer
 Total number of words: 270
