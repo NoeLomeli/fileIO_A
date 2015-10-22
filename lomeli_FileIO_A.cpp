@@ -4,6 +4,7 @@
 #include <cstdlib>
 using namespace std;
 void countWords(string strA, int& words, int& chars);
+string upperAll(string strA);
 int main()
 {
     ifstream fin;
@@ -32,8 +33,9 @@ int main()
     
     while (fin >> words)
     {
-        
+         
         length = words.length();
+        words = upperAll(words);
         switch (length)
         {
             case 2:
@@ -69,10 +71,12 @@ int main()
         }//switch
         
         
+        //words[0] =  toupper(words[0]);
         newString += words + space;
-        //cout << words << space;
+        
+        
         //fin >> words;
-        //fout << words << space;
+        fout << words << space;
     
     }// while
     
@@ -113,4 +117,16 @@ void countWords(string strA, int& words, int& chars)
     }//for
     return;
 }//countWords
+string upperAll(string strA)
+{
+    string upper;    
+    for(int ix = 0; ix < strA.length(); ix++)
+    {
+        string letter;
+        letter = toupper(strA[ix]);
+        upper += letter;
+        
+    }
+    return upper;
+}//upperAll
 
