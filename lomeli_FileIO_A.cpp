@@ -88,6 +88,7 @@ int main()
     fout << length9 << "words of length 9" << endl;
     fout << length10 << "words of length 10" << endl;
     fout << length11 << "words of length 11 or longer" << endl;
+    fout << "Total number of words: " << wordCount << endl;
     fin.close();
     fout.close();
     
